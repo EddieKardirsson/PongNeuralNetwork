@@ -8,8 +8,8 @@ public class Brain : MonoBehaviour
     public GameObject ball;
     Rigidbody2D brb;
     float yvel;
-    float paddleMinY = 8.8f;
-    float paddleMaxY = 17.4f;
+    public float paddleMinY = 8.8f;
+    public float paddleMaxY = 17.4f;
     float paddleMaxSpeed = 15;
     public float numSaved = 0;
     public float numMissed = 0;
@@ -21,6 +21,7 @@ public class Brain : MonoBehaviour
     
     void Start()
     {
+        // Inputs, Outputs, Hidden Layers, Neurons per Hidden Layer, alpha value
         ann = new ANN(6, 1, 1, 4, 0.11);
         brb = ball.GetComponent<Rigidbody2D>();
     }
@@ -41,8 +42,7 @@ public class Brain : MonoBehaviour
         else
             return (ann.CalcOutput(inputs, outputs));
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         float posy = Mathf.Clamp(paddle.transform.position.y + (yvel * Time.deltaTime * paddleMaxSpeed),

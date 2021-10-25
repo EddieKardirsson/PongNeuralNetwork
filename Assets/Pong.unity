@@ -972,6 +972,7 @@ MonoBehaviour:
   ball: {fileID: 505796213}
   numSaved: 0
   numMissed: 0
+  alpha: 0.0010000000474974513
 --- !u!4 &694381177
 Transform:
   m_ObjectHideFlags: 0

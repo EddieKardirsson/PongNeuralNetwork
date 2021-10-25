@@ -178,13 +178,13 @@ public class ANN{
 
 	double TanH(double value)
 	{
-		double k = (double) System.Math.Exp(-2*value);
+		double k = System.Math.Exp(-2*value);
     	return 2 / (1.0f + k) - 1;
 	}
 
 	double Sigmoid(double value) 
 	{
-    	double k = (double) System.Math.Exp(value);
+    	double k = System.Math.Exp(value);
     	return k / (1.0f + k);
 	}
 

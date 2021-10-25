@@ -7,9 +7,8 @@ public class PlayerPaddle : MonoBehaviour
     private Rigidbody2D rb;
     private BoxCollider2D col;
     float yvel;
-    float paddleMinY = 8.8f;
-    float paddleMaxY = 17.4f;
-    float paddleMaxSpeed = 15;
+    public float paddleMinY = 8.8f;
+    public float paddleMaxY = 17.4f;
     public float numSaved = 0;
     public float numMissed = 0;
     private Vector3 direction;
