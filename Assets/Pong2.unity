@@ -805,7 +805,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a72a1f77853149a8bfcd88572f23958, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 800
+  speed: 600
   blip: {fileID: 505796219}
   blop: {fileID: 505796218}
 --- !u!1 &599489248
